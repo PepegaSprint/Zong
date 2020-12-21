@@ -6,6 +6,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
     margin: 0; /* Обнуляем отступы браузера */
+
+
    }
    h1 {
     font-size: 36px; /* Размер шрифта */
@@ -30,37 +32,40 @@ body {
    #menu div {
     padding: 2px; /* Поля вокруг ссылок */
    }
-   #menu a { 
+   #menu p { 
     display: block; /* Отображать ссылку как блок */
     padding: 2px; /* Поля вокруг ссылок */
     margin: 1px; /* Отступы вокруг */
     font-size: 0.9em; /* Размер текста */
     text-decoration: none; /* Убираем подчеркивание текста */
    }
-   #menu a:hover { 
+   #menu p:hover { 
     background: #a8a3c0; /* Цвет фона */
     border: 1px  #634f36; /* Добавление пунктирной рамки */
     margin: 0; /* Убираем поля */
    }
    #content { /* Правая колонка */
-    margin: 10px 5px 20px 225px; /* Значения отступов */
+    margin: 10px 600px 20px 225px; /* Значения отступов */
     padding: 5px; /* Поля вокруг текста */
     border: 1px solid #333; /* Параметры рамки */
+
    }
    .line1 {
     border-bottom: 1px groove #333; /* Линия между ссылками */}
 
    .line
    {
-       height: 100px;
+       height: 80px;
         width: auto;
         display: flex;
         flex-direction: row;  
    }
    .block{
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     margin-right: 10px;
+    background-size: cover;
+    background-image: "";
    }
    .All{
     width: 200px;
@@ -68,7 +73,7 @@ body {
     display: inline;
    }
    .ourCombo{
-    width: 570px;
+    width: 590px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -79,11 +84,35 @@ body {
 
    }
    .dice{
-    width: 90px;
-    height: 90px;
-    background-color: red;
+    width: 70px;
+    height: 70px;
     margin-right: 3px;
     margin-top: 3px;
     border-style: solid;
     border-width: 2px;
+    background-size: cover;
+   }
+   .button{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+   }
+
+   .score{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+   }
+
+   .scoreTable{
+    display: block;
+    width:  275px;
+    height: 520px;
+    margin-left: 900px;
+    margin-top: -520px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-image: URL("https://i.pinimg.com/736x/2c/05/3c/2c053c226afd7c39a489ddf6f3405486.jpg");
+    background-size: cover;
    }

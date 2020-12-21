@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Добро пожаловать в АСС</title>
   <link rel="stylesheet" href="Zong.css">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=db0jF2hff3JhB1yzwnmDmc_vPbPMRUdBvPWi8-K4ctuq3DdoF-k15T9w0IZLtUgKxJIQT_H9LOrCFOAF8j79hegZpO2Jwy4FB54EhAlUQ2VNngL6Ya1vkd9bUGYUbZptuKW4OtxCMTQ7zbMPY2ryYw" charset="UTF-8"></script><script src="Zongj.js"></script>
  </head>
  <body>
   <div id="head">
@@ -12,62 +13,66 @@
   </div>
   <div class="All">
     <div id="menu">
-     <div><a href="1.html">1</a></div>
-     <div><a href="2.html">1</a></div>
-     <div><a href="3.html">1</a></div>
-     <div><a href="1.html">1</a></div>
-     <div><a href="2.html">1</a></div>
-     <div><a href="3.html">1</a></div>
-     <div><a href="1.html">1</a></div>
-     <div><a href="2.html">1</a></div>
-     <div><a href="3.html">1</a></div>
-     <div><a href="1.html">1</a></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
+     <div class="r"><p>1</p></div>
      <div class="line1"></div>
-     <div><button onclick="alert(22)">БАНК</a></div>
+     <div><button onclick="Bank(0)">БАНК</a></div>
     </div>
     <div class="ourCombo">
-    <div class="dice"> </div>
-    <div class="dice"> </div>
-    <div class="dice"> </div>
-    <div class="dice"> </div>
-    <div class="dice"> </div>
-    <div class="dice"> </div>
+    <div class="dice" onclick="clickD(0)" > </div>
+    <div class="dice"onclick="clickD(1)" > </div>
+    <div class="dice" onclick="clickD(2)"> </div>
+    <div class="dice"onclick="clickD(3)"> </div>
+    <div class="dice"onclick="clickD(4)"> </div>
+    <div class="dice"onclick="clickD(5)"> </div>
+    <div class="button" onclick="start()"></div>
     </div>
     </div>
     <div id="content">
          <div class="line" id=1>
-           <div class="block"> </div>
+           <div class="block"onclick="removeElement(0)">
+             <p class="pop"></p> </div>
         </div>
         <div class="line" id=2>
-          <div class="block"> </div>
-          <div class="block"> </div>
+          <div class="block"onclick="removeElement(0)"> </div>
+          <div class="block"onclick="removeElement(1)"> </div>
         </div>
         <div class="line" id=3>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
+          <div class="block"onclick="removeElement(0)"> </div>
+          <div class="block"onclick="removeElement(1)"> </div>
+          <div class="block"onclick="removeElement(2)"> </div>
         </div>
         <div class="line" id=4>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
+          <div class="block" onclick="removeElement(0)"> </div>
+          <div class="block" onclick="removeElement(1)"> </div>
+          <div class="block" onclick="removeElement(2)"> </div>
+          <div class="block" onclick="removeElement(3)"> </div>
         </div>
         <div class="line" id=5>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
+          <div class="block" onclick="removeElement(0)"> </div>
+          <div class="block" onclick="removeElement(1)"> </div>
+          <div class="block" onclick="removeElement(2)"> </div>
+          <div class="block" onclick="removeElement(3)"> </div>
+          <div class="block" onclick="removeElement(4)"> </div>
         </div>
         <div class="line" id=6>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
-          <div class="block"> </div>
+          <div class="block" onclick="removeElement(0)"> </div>
+          <div class="block" onclick="removeElement(1)"> </div>
+          <div class="block" onclick="removeElement(2)"> </div>
+          <div class="block" onclick="removeElement(3)"> </div>
+          <div class="block" onclick="removeElement(4)"> </div>
+          <div class="block" onclick="removeElement(5)"></div>
+          <div class = "score"> </div>
         </div>
     </div>
+    <div class="scoreTable">  </div>
    </body>
   </html>
