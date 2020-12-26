@@ -62,6 +62,26 @@ function Graphics2(p){
     }
     return t
 }
+function winGame(){
+  
+    alert("Ваши набранные очки = "+bank);
+    let elements = document.querySelectorAll('.r');
+    let t=1;
+    numberOfRound=0;
+    zonkCnt=0;
+    bank=0;
+    for(let e of elements){
+        e.textContent=t;
+        t++;
+    }
+    Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+
+}
 function start(){
     if(isValid)
     {
@@ -107,8 +127,12 @@ function start(){
 }
 }
 function Bank(x){
-    if(x==0){zonkCnt=0}
+   
     bank+=AllScore+score;
+    if(x==0){zonkCnt=0;
+        let es = document.querySelector('.tt');
+        es.textContent="Текущий счет "+ bank;
+    }
     let el = document.querySelectorAll('.r')[numberOfRound];
     numberOfRound++;
     el.textContent=AllScore+score;
@@ -128,6 +152,8 @@ function Bank(x){
     for(let z of elem){
         z.style.backgroundImage="";
     }  
+    if(numberOfRound==10)
+    winGame();
     }
 function ComboCheck(art){
     let w=Combos2(art);

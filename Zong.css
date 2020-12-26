@@ -47,7 +47,6 @@ body {
    #content { /* Правая колонка */
     margin: 10px 600px 20px 225px; /* Значения отступов */
     padding: 5px; /* Поля вокруг текста */
-    border: 1px solid #333; /* Параметры рамки */
 
    }
    .line1 {
@@ -79,8 +78,6 @@ body {
     justify-content: space-around;
     margin: 3px;
     margin-left: 3px;
-    border-style: solid;
-    border-width: 1px;
 
    }
    .dice{
@@ -89,13 +86,17 @@ body {
     margin-right: 3px;
     margin-top: 3px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     background-size: cover;
    }
    .button{
     width: 70px;
     height: 70px;
     border-style: solid;
+    margin-top: 2px;
+    border-width: 2px;
+    background-image: url('https://mirataljazeera.org/wp-content/uploads/2017/06/red-vector-dice.jpg');
+    background-size: cover;
    }
 
    .score{
@@ -106,12 +107,10 @@ body {
 
    .scoreTable{
     display: block;
-    width:  275px;
-    height: 520px;
+    width:  350px;
+    height: 650px;
     margin-left: 900px;
-    margin-top: -520px;
-    border-style: solid;
-    border-color: black;
+    margin-top: -600px;
     border-width: 1px;
     background-image: URL("https://i.pinimg.com/736x/2c/05/3c/2c053c226afd7c39a489ddf6f3405486.jpg");
     background-size: cover;
