@@ -59,6 +59,7 @@ body {
         display: flex;
         flex-direction: row;  
    }
+   
    .block{
     height: 70px;
     width: 70px;

@@ -308,6 +308,7 @@ function clickD(x){
         {
             i++;
         }
+        
         arrInLine.splice(i,1);
         let elements = document.querySelectorAll('.dice');
         i=0;
