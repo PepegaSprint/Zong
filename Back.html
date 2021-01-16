@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body > 
+    <script language="javascript" type="text/javascript">
+    var aa=0;
+    function chooseBckg(){
+        var rad=document.getElementsByName('bck');
+  for (var i=0;i<rad.length; i++)
+    if (rad[i].checked) aa=i
+            document.location="backgr.html?id="+aa; } 
+             </script>
+
+     <p>Выберите фон:</p>
+     <form>
+    <input type="radio" id="1" name="bck" value="1">
+    <label for="1" class="left"></label><br>
+    <input type="radio" id="2" name="bck" value="2">
+    <label for="2" class="mid" > </label><br>
+    <input type="radio" id="3" name="bck" value="3">
+    <label for="3" class="right"></label>
+    </form>
+    <br><br>
+    <a class="botr" onclick="chooseBckg()">Далее</a>
+</body>
+
+</html>

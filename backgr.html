@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body > 
+  <script language="javascript" type="text/javascript">
+    var aa=0;
+    var query = window.location.href.split("=")[1]; // результат - строка запроса без адреса страницы "id=someName&userMail=some@mail.com&usText=MemoText"
+    function chooseBckg(){
+        var rad=document.getElementsByName('bck');
+  for (var i=0;i<rad.length; i++)
+    if (rad[i].checked) aa=i
+    var text=document.getElementsByName('txt');
+            document.location="Zong.html?id="+query+"="+aa+"="+text[0].value; } 
+             </script>
+
+     <p>Выберите сложность:</p>
+     <table width="20%" cellpadding="5">
+      <tr>
+       <th>Количество звёзд</th>
+       <th>Очки</th>
+      </tr>
+      <tr>
+       <td>1</td>
+       <td>10 000</td>
+     </tr>
+     <tr>
+      <td>2</td>
+      <td>11 000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>12 000</td>
+    </tr>
+    </table>
+    <br><br>
+     <form>
+    <input type="radio" id="1" name="bck" value="1">
+    <label class="lebel" for="1"><img class="stars" src="1s.png" alt="1 star"></label>
+    <input type="radio" id="2" name="bck" value="2">
+    <label class="lebel" for="2"><img class="stars" src="2s.png" alt="2 stars"></label>
+    <input type="radio" id="3" name="bck" value="3">
+    <label class="lebel" for="3"><img class="stars" src="3s.png" alt="3 stars"></label>
+    </form>
+    <br><br>
+    <p class="textbox"><b>Введите приветствие</b><br>
+      <input  type="text" name="txt" size="40">
+    <a class="botr" onclick="chooseBckg()">Далее</a>
+</body>
+
+</html>

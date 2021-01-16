@@ -8,6 +8,64 @@ body{
     padding-left: 250px;
     padding-right: 250px;
 }
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+}
+table{
+  background-color: rgba(240, 248, 255, 0.479);
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  padding: 5px;
+  margin: 0 auto;
+
+  
+}
+
+
+
+
+
+.right{
+  background-image: url('https://www.itl.cat/pics/b/28/286022_pepe-wallpaper.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  display: inline;
+}
+
+.mid{
+  background-image: url('https://ramki-photoshop.ru/fony/fon-220.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  display: inline;
+}
+
+.left{
+  background-image: url('https://bgfons.com/upload/ornaments_texture1130.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  display: inline;
+}
+
+th{
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 3px;
+}
+td{
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 1px;
+}
 p{
     font-family: 'Dosis', sans;
     font-size: 20pt;
@@ -16,7 +74,33 @@ p{
     background-color: rgba(240, 248, 255, 0.39);
     border-radius: 20px;
     padding: 10px;
+    width: 400px;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 15px;
 }
+label{
+  font-family: 'Dosis', sans;
+  width: 100px;
+    font-size: 20pt;
+    font-weight:200;
+    color:#000;
+    background-color: rgba(240, 248, 255, 0.39);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.lebel{
+  font-family: 'Dosis', sans;
+  width: 300px;
+    font-size: 20pt;
+    font-weight:200;
+    color:#000;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 20px;
+    padding: 10px;
+}
+
 a.botr{
     background:rgb(201, 235, 201);
     width:505px;
@@ -54,4 +138,9 @@ a.botr{
      -moz-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
        -o-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
           transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+  }
+
+  .textbox{
+height: 60px;
+
   }

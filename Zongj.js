@@ -12,6 +12,40 @@ let line=7;
 let cube =6;
 let isValid = true;
 let numberOfRound=0;
+let bImg;
+let inScore
+var ReplaceBackground = function()
+{
+    var query = window.location.href.split("=");
+    switch(+query[1]){
+        case 0:
+        bImg='url(https://bgfons.com/upload/ornaments_texture1130.jpg)';
+        break;
+        case 1:
+        bImg='url(https://ramki-photoshop.ru/fony/fon-220.jpg)';
+        break;
+        case 2:
+        bImg='url(https://www.itl.cat/pics/b/28/286022_pepe-wallpaper.jpg)';
+        break;
+    }
+    document.body.style.backgroundImage=bImg;
+    switch(+query[2]){
+        case 0:
+        inScore=10000;
+        break;
+        case 1:
+        inScore=11000;
+        break;
+        case 2:
+        inScore=12000;
+        break;
+    }
+    let element = document.querySelector('h1');   
+    element.textContent= element.textContent+" "+query[3];
+}
+document.addEventListener("DOMContentLoaded", ReplaceBackground);
+
+
 function Graphics(p){
     switch(p)
     {
@@ -64,7 +98,11 @@ function Graphics2(p){
 }
 function winGame(){
   
-    alert("Ваши набранные очки = "+bank);
+    alert("Ваши набранные очки = "+bank+ "Необходимое количество очков = " + inScore);
+    if(bank>=inScore)
+        alert("Вы победили!")
+    else
+        alert("Казик поглотил вас")
     let elements = document.querySelectorAll('.r');
     let t=1;
     numberOfRound=0;
@@ -74,12 +112,6 @@ function winGame(){
         e.textContent=t;
         t++;
     }
-    Swal.fire({
-        title: 'Error!',
-        text: 'Do you want to continue',
-        icon: 'error',
-        confirmButtonText: 'Cool'
-      })
 
 }
 function start(){
