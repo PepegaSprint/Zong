@@ -118,9 +118,34 @@ body {
     display: block;
     width:  350px;
     height: 650px;
-    margin-left: 900px;
-    margin-top: -600px;
+    margin-left: 820px;
+    margin-top: -590px;
     border-width: 1px;
     background-image: URL("https://i.pinimg.com/736x/2c/05/3c/2c053c226afd7c39a489ddf6f3405486.jpg");
     background-size: cover;
    }
+
+
+   table{
+    background-color: rgba(240, 248, 255, 0.479);
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    padding: 5px;
+    margin: -635px 1170px;
+
+  }
+
+  td {
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 1px;
+}
+
+th{
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 3px;
+  }
